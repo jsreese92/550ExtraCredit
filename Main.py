@@ -38,16 +38,6 @@ def readFile():
     if (newlineCount == 3):
       split = line.split()
       e = Edge(int(split[0]),int(split[1]))
-      '''
-      # put actual vertices in edge, not just index
-      for v in vertexList:
-        if (v.index == e.v0index):
-          e.v0 = v
-        if (v.index == e.v1index):
-          e.v1 = v
-      e.v0.neighborList.append(e.v1)
-      e.v1.neighborList.append(e.v0)
-      '''
 
       edgeList.append(e)
       #print e.toString()
@@ -68,18 +58,6 @@ def initNeighbors(vertexList, edgeList):
   return sortedList
   #for v in sortedList:
   #  print v.index
-  
-  '''
-      # put actual vertices in edge, not just index
-      for v in vertexList:
-        if (v.index == e.v0index):
-          e.v0 = v
-        if (v.index == e.v1index):
-          e.v1 = v
-      e.v0.neighborList.append(e.v1)
-      e.v1.neighborList.append(e.v0)
-      '''    
-    
 
 def main():
   # read in from text file

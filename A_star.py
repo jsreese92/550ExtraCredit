@@ -31,6 +31,7 @@ class A_star:
         #print "reconstruct path called"
         #return self.reconstructPath(cameFrom,goalVertex)
         print "shortest path: %s" % goalVertex.gScore
+        break
       openSet.remove(current)
       closedSet.add(current)
       for n in current.neighborList:
